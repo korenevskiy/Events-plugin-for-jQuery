@@ -2,16 +2,13 @@
  * Events plugin for jQuery
  * @summary Binding variables to HTML tags. Create variable as alias for tags. Set value to tags as set value to variables.
  * @description Binding variables to HTML tags. Create variable as alias for tags. Set value to tags as set value to variables.
- *
- *
- * Released under the MIT license 
- *
- * Date: 2020-07-15T00:00Z
+ 
+ * @license: http://opensource.org/licenses/MIT
  * @module Events plugin for jQuery
+ * Date: 2020-07-15T00:00Z
  * @param $ {jQuery} jQuery
  * @extends jQuery
- * @license: http://opensource.org/licenses/MIT
- * @requires jQuery
+ * @requires jQuery  
  * @link 
  * @tutorial https://github.com/korenevskiy/Events-plugin-for-jQuery
  * @see https://github.com/korenevskiy/Events-plugin-for-jQuery
