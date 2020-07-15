@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<title>Тестирование jQuery Binder</title>
+<script  src="/plugins/system/ContentBlogAnnounce/media/jui/js/jquery.min.js"></script>
+<script   src="/files/binder_lite.js"></script>
+<style>
+    body{
+        background: black;
+        color: lightsteelblue;
+        font-size: 1.4rem;
+    } 
+    dt{
+        opacity: 0.6;
+    }
+    dd{
+        font-weight: bold;
+        margin-left: 100px;
+        color: lightgrey;
+    }
+    span{
+        display: inline-block;
+        opacity: 0.4;
+        margin: 14px;
+        font-size: 1rem;
+    }
+    button{
+        font-size: 1.2rem;
+    }
+</style>
+  
+
+ 
+<script>
+jQuery(1).event('cost','#ammount','This is the total purchase amount <big style="color: red">{0}</big> $');
+jQuery(1).event('cost','.cart_cost','Amount {0} $');
+jQuery(1).event('cost','.order_cost','{0} $');
+
+jQuery(1).var('cost', 256);
+
+jQuery(1).event('name','#username','Dear <big style="color: green">{0}</big>');
+jQuery(1).event('name','.widget_cart--user','Accaunt {0}');
+jQuery(1).event('name','.module_user--name','Thank you administrator {0}');
+
+jQuery(1).var('name','Maddona');
+</script>
+
+<dl>
+  <dt>Name:
+  <dd id="username"> Atribute ID first
+  <dt>Widget User:
+  <dd class="widget_cart--user"> Class terms
+
+  <dt>Calculator Amount:
+  <dd class="ammount"> Class terms
+
+
+  <dt> Ammount id:ammount
+  <dd id="ammount"> attribute ID ammount
+
+  <dt> Count class:cart_cost
+  <dd class="cart_cost"> 000
+
+  <dt> Module user:
+  <dd class="module_user--name"> Anonym
+  <dt> Order cost:
+  <dd class="order_cost"> 000
+</dl>
+<br>Cost:
+<button onclick="jQuery(1).var('cost', 620)">set 620</button>
+<button onclick="jQuery(1).var('cost', 950);">set 950</button>
+<button onclick="jQuery(1).var('cost', 222);">set 222</button>
+<br><span>jQuery(1).var('cost', 620)</span>
+
+<br>Name:
+<button onclick="jQuery(1).var('name', 'Bred Pitt');">set Bred Pitt</button>
+<button onclick="jQuery(1).var('name', 'Angelina Jolie');">set Angelina Jolie</button> 
+<br><span>jQuery(1).var('name', 'Bred Pitt')</span>
