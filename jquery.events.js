@@ -4,7 +4,6 @@
  * @description Binding variables to HTML tags. Create variable as alias for tags. Set value to tags as set value to variables.
  *
  *
- * Copyright JS Foundation and other contributors
  * Released under the MIT license 
  *
  * Date: 2020-07-15T00:00Z
