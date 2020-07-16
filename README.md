@@ -57,7 +57,7 @@ jQuery().var('cost',6000);
 ```javascript
 jQuery().event('cost', false);
 ```
-//Все теги и функции привязанные к переменной cost будут удалены.
+//All tags and functions associated with the cost variable will be deleted.
 
 ##### Second example:
 
