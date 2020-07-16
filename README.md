@@ -50,7 +50,7 @@ jQuery().var('cost',6000);
 <span class='order_cost'>6000</span>
 <span class='order_cost_tax'>7200</span>
 ```
-// ***Set by the `jQuery.var('cost',6000);` we automatically change all values associated with cost
+// ***Set by the `jQuery().var('cost',6000);` we automatically change all values associated with cost
 
 
 ## Removing the binding to the variable:
@@ -83,7 +83,7 @@ jQuery.var('cost',20);
 <span class='order_cost_tax'>The amount of 24 $ of purchases including tax.</span>
 ```
 *By creating formatting in the binding to the tag. We no longer think or worry about formats when new values are received.
-Now specifying `jQuery.var('cost', 20);` the new values are automatically displayed in the linked HTML tags.*
+Now specifying `jQuery().var('cost', 20);` the new values are automatically displayed in the linked HTML tags.*
 
 
 ##### Removing the binding to the variable:
@@ -117,7 +117,7 @@ jQuery().var('cost',user);
 <span class='order_cost_tax'>Average price: 5 $ of 6 purchases including tax.</span>
 ```
 *By creating formatting in the binding to the tag. We no longer think or worry about formats when new values are received. 
-Now specifying `jQuery.var('cost',20);` the new values are automatically displayed in the linked HTML tags.*
+Now specifying `jQuery().var('cost',20);` the new values are automatically displayed in the linked HTML tags.*
 
 
 ## The Format Of The Event:
