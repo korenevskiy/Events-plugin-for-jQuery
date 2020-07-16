@@ -7,7 +7,7 @@ By assigning a value to the variable name, we will assign a value to the variabl
 - Linking objects
 - Bindings constant or once for a tag or function.
  
-Простой Пример:
+##### Simple example:
 #### We have tags for displaying data:
 ```html
 <span class='ammount'>0</span>
@@ -158,6 +158,7 @@ function(e){
 ```
 
 ## String format:
+```
 {this} - Set value variable in string;
 {0} - Set value variable in string;
 {value} - Set value variable in string;
@@ -166,3 +167,4 @@ function(e){
 {this.ThirdProp} - Set Propertie object in string
 Example 1: "Dier {0} my friend!" 
 Example 2: "Dier {this.FirstProp} {this.SecondProp} my friend" 
+```
