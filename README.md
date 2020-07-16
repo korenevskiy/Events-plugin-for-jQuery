@@ -4,7 +4,7 @@ We bind tags and functions to specific variable names.
 By assigning a value to the variable name, we will assign a value to the variable in all associated tags and functions.
 ##### Features:
 - string formatting
-- Linking objects
+- Binding objects
 - Bindings constant or once for a tag or function.
  
 ##### Simple example:
@@ -29,9 +29,9 @@ jQuery().event('cost', function(){ console.log('Cost of products:',this)});
 ```javascript
 jQuery().var('cost',200); 
 ```
-*We have placed the value 200 in all linked tags to the cost variable, and in the tag .order_cost_tax placed a value of 240, which is 20% more than the value of the variable.*
+*We have placed the value 200 in all binding tags to the cost variable, and in the tag .order_cost_tax placed a value of 240, which is 20% more than the value of the variable.*
 
-##### Результат:
+##### Result:
 ```html
 <span class='ammount'>200</span>
 <span class='cart_cost'>200</span>
