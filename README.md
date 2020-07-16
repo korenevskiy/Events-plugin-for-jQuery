@@ -50,7 +50,7 @@ jQuery().var('cost',6000);
 <span class='order_cost'>6000</span>
 <span class='order_cost_tax'>7200</span>
 ```
-// *** Задав функцией jQuery.var('cost',6000);  мы автоматически меняем все значения привязанные к cost
+// ***Set by the `jQuery.var('cost',6000);` we automatically change all values associated with cost
 
 
 ## Removing the binding to the variable:
@@ -116,8 +116,8 @@ jQuery().var('cost',user);
 <span class='order_cost'>Madonna: 20 $</span>
 <span class='order_cost_tax'>Average price: 5 $ of 6 purchases including tax.</span>
 ```
-*Создав форматирование в привязке к тегу. Мы больше не думаем и не беспокоимся об форматах при поступлении новых значений. 
-Теперь указывая `jQuery.var('cost',20); `новые значения автоматически отображаются в привязанных HTML тегах.*
+*By creating formatting in the binding to the tag. We no longer think or worry about formats when new values are received. 
+Now specifying `jQuery.var('cost',20);` the new values are automatically displayed in the linked HTML tags.*
 
 
 ## The Format Of The Event:
