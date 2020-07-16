@@ -168,6 +168,6 @@ function(e){
 Example 1: "Dier {0} my friend!" 
 Example 2: "Dier {this.FirstProp} {this.SecondProp} my friend" 
 ```
-##### Donate PayPal: koreshs@mail.ru 
+## Donate PayPal: koreshs@mail.ru 
 -  Please support the development of the plugin.
 -  We must make the world a better place.
