@@ -168,6 +168,11 @@ function(e){
 Example 1: "Dier {0} my friend!" 
 Example 2: "Dier {this.FirstProp} {this.SecondProp} my friend" 
 ```
+## Include Events Plugin jQuery:
+```html
+<script  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script  src="https://raw.githubusercontent.com/korenevskiy/Events-plugin-for-jQuery/master/Release/jquery.events.js"></script>
+```
 ## Donate PayPal: koreshs@mail.ru 
 -  Please support the development of the plugin.
 -  We must make the world a better place.
