@@ -50,14 +50,14 @@ jQuery().var('cost',6000);
 <span class='order_cost'>6000</span>
 <span class='order_cost_tax'>7200</span>
 ```
-// ***Set by the `jQuery().var('cost',6000);` we automatically change all values associated with cost
+*Set by the `jQuery().var('cost',6000);` we automatically change all values associated with cost*
 
 
 ## Removing the binding to the variable:
 ```javascript
 jQuery().event('cost', false);
 ```
-//All tags and functions associated with the cost variable will be deleted.
+*All tags and functions associated with the cost variable will be deleted.*
 
 ##### Second example:
 
