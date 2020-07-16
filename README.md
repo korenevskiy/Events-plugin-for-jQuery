@@ -72,7 +72,7 @@ jQuery().event('cost', '.order_cost_tax',function(){ return 'The amount of ${thi
 
 ##### Set the value
 ```javascript
-jQuery.var('cost',20);
+jQuery().var('cost',20);
 ```
 
 ##### Result:
@@ -137,10 +137,10 @@ jQuery().event(variableName, false); //unbind all binders for one variable name
 
 ## The Variable Format:
 ```javascript
-jQuery.var(variableName); // Get value from variable
-jQuery.var(variableName,variableValue); // Set value in variable
-jQuery.var(variableName,variableObject); // Set Object in variable
-jQuery.var(variableName,null); // Delete variable
+jQuery().var(variableName); // Get value from variable
+jQuery().var(variableName,variableValue); // Set value in variable
+jQuery().var(variableName,variableObject); // Set Object in variable
+jQuery().var(variableName,null); // Delete variable
 ```
 
 ## Format of the event function:
