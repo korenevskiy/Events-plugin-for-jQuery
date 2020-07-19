@@ -231,13 +231,21 @@ jQuery.fn.var = function(name, value) {
     }
 };
     
-    
 /*
- * Short Alias for Evet
+ * Short Alias for Event
+ */
+jQuery.fn.e = jQuery().event;
+/*
+ * Short Alias for Var
+ */
+jQuery.fn.v = jQuery().var;
+
+/*
+ * Short Alias for Event
  */
 jQuery.e = jQuery().event;
 /*
- * Short Alias for Variable
+ * Short Alias for Var
  */
 jQuery.v = jQuery().var;
  
