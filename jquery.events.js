@@ -230,15 +230,23 @@ jQuery.fn.var = function(name, value) {
         } 
     }
 };
-    
 /*
- * Short Alias for Evet
+ * Short Alias for Event
  */
-jQuery.e = jQuery().event;
+jQuery.fn.e = jQuery().event;
+/*
+ * Short Alias for Var
+ */
+jQuery.fn.v = jQuery().var;
+
 /*
  * Short Alias for Variable
  */
 jQuery.v = jQuery().var;
+/*
+ * Short Alias for Event
+ */
+jQuery.e = jQuery().event;
  
 String.prototype.format = String.prototype.format || function (value) {
     var newStr = this;
