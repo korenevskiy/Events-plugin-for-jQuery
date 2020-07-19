@@ -169,9 +169,13 @@ Example 1: "Dier {0} my friend!"
 Example 2: "Dier {this.FirstProp} {this.SecondProp} my friend" 
 ```
 ## Include Events Plugin jQuery:
+```javascript
+jQuery.v(); //Alias for jQuery().var()
+jQuery.e(); //Alias for jQuery().event()
+```
+## Short Alias Events Plugin jQuery:
 ```html
-<script  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script  src="https://raw.githubusercontent.com/korenevskiy/Events-plugin-for-jQuery/master/Release/jquery.events.min.js"></script>
+
 ```
 ## Demo:
 https://jsfiddle.net/KoreshS/1e4vqcs5/
