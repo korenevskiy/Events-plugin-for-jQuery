@@ -177,6 +177,9 @@ Example 2: "Dier {this.FirstProp} {this.SecondProp} my friend"
 ```javascript
 jQuery.v(); //Alias for jQuery().var()
 jQuery.e(); //Alias for jQuery().event()
+
+$.e('cost','.cost'); // Short example for Event
+$.v('cost',100); // Short example for Var
 ```
 ## Demo:
 https://jsfiddle.net/KoreshS/1e4vqcs5/
