@@ -182,7 +182,7 @@ $.e('cost','.cost'); // Short example for Event
 $.v('cost',100); // Short example for Var
 ```
 ## Demo:
-https://jsfiddle.net/KoreshS/1e4vqcs5/
+https://jsfiddle.net/KoreshS/ezhc95jL/
 ## Demo:
 https://explorer-office.ru/files/index.html
 
