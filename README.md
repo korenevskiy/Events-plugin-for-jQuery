@@ -10,7 +10,7 @@ By assigning a value to the variable name, we will assign a value to the variabl
 ##### Simple example:
 #### We have tags for displaying data:
 ```html
-<span class='ammount'>0</span>
+<span class='amount'>0</span>
 <span class='cart_cost'>0</span>
 <span class='order_cost'>0</span>
 <span class='order_cost_tax'>0</span>
@@ -18,7 +18,7 @@ By assigning a value to the variable name, we will assign a value to the variabl
 
 #### First, we bind the values of HTML tags and functions to the variable name.
 ```javascript
-jQuery().event('cost', '.ammount');
+jQuery().event('cost', '.amount');
 jQuery().event('cost', '.cart_cost');
 jQuery().event('cost', '.order_cost');
 jQuery().event('cost', '.order_cost_tax',function(){ return this*1.2});
@@ -33,7 +33,7 @@ jQuery().var('cost',200);
 
 ##### Result:
 ```html
-<span class='ammount'>200</span>
+<span class='amount'>200</span>
 <span class='cart_cost'>200</span>
 <span class='order_cost'>200</span>
 <span class='order_cost_tax'>240</span>
@@ -119,6 +119,26 @@ jQuery().var('cost',user);
 *By creating formatting in the binding to the tag. We no longer think or worry about formats when new values are received. 
 Now specifying `jQuery().var('cost',20);` the new values are automatically displayed in the linked HTML tags.*
 
+
+##### Set the array objects
+```javascript
+let user = {FirstName:'Madonna',LastName:'Ciccone',Cost:20,CountProducts:5};
+jQuery().event('listUsers','.listUser',function(){ 
+    let html = '';
+    for(let user of this){
+        html += "<div> <span>${user.FirsName}</span>  <span>${user.LastName}</span> salary:  ${user.Amount} ₽ </div>";
+    }
+    return html;
+});
+
+let users = [
+    {FirsName:'Sergei',LastName:'Korenevskiy',Amount:'5000000' },
+    {FirsName:'Ivan',LastName:'Vasyutin',Amount:'1000000' },
+    {FirsName:'Vika',LastName:'Maltseva',Amount:'5000000' },
+];
+
+jQuery().var('listUsers',users);
+```
 
 ## The Format Of The Event:
 ```javascript
