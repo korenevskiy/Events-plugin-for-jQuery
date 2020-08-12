@@ -21,8 +21,7 @@
  * @copyright  Korenevskiy Sergei Borisovich (Кореневский Сергей Борисович)
  */
 
-(
-/**
+(/**
 @class Events
  */
 function( $ ) {
@@ -95,11 +94,12 @@ const SaveHandler = function(nameValue, func, id = 0, data = {}){
     };
 };
 
+
 //$.fn.test = function(){
-//    this.vars = vars;
-//    console.log('Func TEST:',arguments);
-//    console.log('This:',this); 
-//    return events;
+//    //this.vars = vars;
+//    //console.log('Func TEST:',arguments);
+////    console.log('This:',this); //Object.keys(this),
+////    return this.selector;
 //};
 /**
  * @method event
@@ -198,8 +198,8 @@ $.fn.event = function(name) {//,selector, data, handler
  */
 jQuery.fn.var = function(name, value) {
     
-    if(this.length == 0)
-    ;
+//    if(this.length == 0)
+//    return vars;
     
     if(arguments.length === 1){
         if(vars.hasOwnProperty(name)===false)
@@ -230,6 +230,7 @@ jQuery.fn.var = function(name, value) {
         } 
     }
 };
+
 /*
  * Short Alias for Event
  */
@@ -247,9 +248,10 @@ jQuery.v = jQuery().var;
  * Short Alias for Event
  */
 jQuery.e = jQuery().event;
+
  
 String.prototype.format = String.prototype.format || function (value) {
-    var newStr = this;
+    let newStr = this;
     
     //Fixing: Add formating with support settings object
     if(typeof value !== 'object'){
@@ -257,7 +259,7 @@ String.prototype.format = String.prototype.format || function (value) {
         return newStr;
     }
     
-    for (var key in value){
+    for (let key in value){
         this[key]=value[key];
         newStr = newStr.replace('{' + key + '}', value[key]).replace('{this.' + key + '}', value[key]).replace('{value.' + key + '}', value[key]);
     }
