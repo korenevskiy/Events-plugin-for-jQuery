@@ -34,7 +34,7 @@ function( $ ) {
 @private
 @final    
 */
-var hash = ''.concat((new Date()).valueOf().toString()) ;
+const hash = ''.concat((new Date()).valueOf().toString()) ;
     
 /**
 @property events Массив событий
@@ -42,14 +42,14 @@ var hash = ''.concat((new Date()).valueOf().toString()) ;
 @private
 @final    
 */
-var events = {};
+const events = {};
 /**
 @property vars Хэш случай одинаковых индексов фунций без индексов
 @type Object
 @private
 @final    
 */
-var vars = {};
+const vars = {};
  
 
 /**
@@ -60,7 +60,7 @@ var vars = {};
  * @param {Object}[data={}] Data for function in attribute
  * @returns {void}
  */
-var SaveHandler = function(nameValue, func, id = 0, data = {}){
+const SaveHandler = function(nameValue, func, id = 0, data = {}){
     
     if(events.hasOwnProperty(nameValue) === false){
         events[nameValue] = {};
