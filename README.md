@@ -122,7 +122,6 @@ Now specifying `jQuery().var('cost',20);` the new values are automatically displ
 
 ##### Set the array objects
 ```javascript
-let user = {FirstName:'Madonna',LastName:'Ciccone',Cost:20,CountProducts:5};
 jQuery().event('listUsers','.listUser',function(){ 
     let html = '';
     for(let user of this){
