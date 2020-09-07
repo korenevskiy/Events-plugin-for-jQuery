@@ -24,7 +24,6 @@
  * @mail koreshs@mail.ru
  * @yandex-money 41001899218982
  * @paypal koreshs@mail.ru
- * @donat 2$
  * @author Korenevskiy Sergei Borisovich (Кореневский Сергей Борисович)
  * @copyright  Korenevskiy Sergei Borisovich (Кореневский Сергей Борисович)
  */
