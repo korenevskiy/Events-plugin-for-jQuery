@@ -22,6 +22,8 @@
  * @example https://explorer-office.ru/files/index.html
  * @version 0.9
  * @mail koreshs@mail.ru
+ * @yandex-money 41001899218982
+ * @paypal koreshs@mail.ru
  * @author Korenevskiy Sergei Borisovich (Кореневский Сергей Борисович)
  * @copyright  Korenevskiy Sergei Borisovich (Кореневский Сергей Борисович)
  */
@@ -802,7 +804,26 @@ jQuery.fn.var = function(name, value) {//, ...theArgs
         }
         return format;
     };
-    
-
+    function init(){
+        let tags = $('[events-var],[events-load]');
+        tags.each(function(){
+            let el = this;
+            let name   = this.attr("events-var");
+            let format = this.attr("events-format");
+            let load   = this.attr("events-load");
+        
+            if(name){
+                if(format)
+                    Event(name,this, format);
+                else
+                    Event(name,this);
+            }
+            if(load){
+                if (new Function('return typeof ' + load)() !== 'undefined')
+                    eval(load+'(this)');
+            }
+        });
+    }
+    init();
 })
 );
