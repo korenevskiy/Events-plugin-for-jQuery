@@ -22,8 +22,6 @@
  * @example https://explorer-office.ru/files/index.html
  * @version 0.9
  * @mail koreshs@mail.ru
- * @yandex-money 41001899218982
- * @paypal koreshs@mail.ru
  * @author Korenevskiy Sergei Borisovich (Кореневский Сергей Борисович)
  * @copyright  Korenevskiy Sergei Borisovich (Кореневский Сергей Борисович)
  */
@@ -567,8 +565,31 @@ jQuery.fn.var = function(name, value) {//, ...theArgs
     }
 	
     if(arguments.length === 1){
-        if(vars.hasOwnProperty(name)===false)
-            return null;
+        if(['string','number','boolean','bigint','symbol'].includes(typeof name)){
+            //return vars[name] ?? null;//vars.hasOwnProperty(name)===false
+            
+            if([undefined,null].includes(vars[name]))
+               return null;
+            vars[name]
+        }
+        
+        if(typeof name === 'object'){
+            let _vars = name;
+            for(let n in _vars){
+                if(_vars[n] === null)
+                    delete vars[n];
+                vars[n] = _vars[n];
+                
+                for(let id in events[n]){
+                    let result = events[n][id].call(value,value,{
+                        value:value,property:undefined,propsRequaire:[],object:value,id:id});
+                    if([false,null].includes(result)){
+                        delete events[n][id];
+                    }
+                }
+            }
+        }
+        
         return vars[name];
     }
 	
